@@ -1,0 +1,23 @@
+{
+  "name": "okra",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jacobstr/okra",
+  "authors": [
+    "jacobstr <jacobstr@gmail.com>"
+  ],
+  "description": "Fluent object and trace dumps for node.",
+  "main": "index.coffee",
+  "keywords": [
+    "node",
+    "logging",
+    "debug"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

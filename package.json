@@ -1,0 +1,31 @@
+{
+  "name": "okra",
+  "description": "Fluent object and trace dumps for node.",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "echo \"Error: no tests specified\" && exit 1"
+  },
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jacobstr/okra.git"
+  },
+  "author": "Jacob Straszynski",
+  "license": "MIT",
+  "dependencies": {
+    "coffee-script": "*",
+    "coffee-errors": "*",
+    "stack-trace": "*",
+    "colors": "*",
+    "eyes": "~0.1.8",
+    "pegjs": "~0.8.0"
+  },
+  "devDependencies": {
+    "sinon": "~1.9.1",
+    "chai": "~1.9.1",
+    "sinon-chai": "~2.5.0",
+    "grunt-mocha-test": "~0.10.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-simple-mocha": "~0.4.0"
+  }
+}
