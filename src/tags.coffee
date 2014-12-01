@@ -2,8 +2,7 @@ peg = require 'pegjs'
 util = require 'util'
 fs = require 'fs'
 
-grammar = fs.readFileSync __dirname + '/tags.pegjs', 'utf-8'
-parser = peg.buildParser grammar
+parser = require './tagparser'
 
 class GroupNode
   constructor: (@nodes) ->

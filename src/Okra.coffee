@@ -21,8 +21,10 @@ inspect = (arg) ->
 # Blacklist internal stack traces
 is_filtered = (item) ->
   files = (path.join(path.dirname(__dirname), file) for file in [
-    'lib/Okra.coffee'
+    'src/Okra.coffee'
     'index.coffee'
+    'js/Okra.js'
+    'index.js'
   ])
 
   item.fileName in files

@@ -1,8 +1,8 @@
 okra = require '../index'
-Watcher = require '../lib/Watcher'
-WatcherCollection = require '../lib/WatcherCollection'
+Watcher = require '../src/Watcher'
+WatcherCollection = require '../src/WatcherCollection'
 
-{ Node, GroupNode, Tag } = tags = require '../lib/tags'
+{ Node, GroupNode, Tag } = tags = require '../src/tags'
 
 
 class StringLogger

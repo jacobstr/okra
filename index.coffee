@@ -1,4 +1,4 @@
-Okra = require './lib/Okra'
+Okra = require './src/Okra'
 
 # I don't want api users having to do okra() or new Okra() but we want a new
 # instance to be created when you start a chain off via the invocation/access

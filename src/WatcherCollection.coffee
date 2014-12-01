@@ -1,4 +1,4 @@
-tags = require './tags.coffee'
+tags = require './tags'
 
 class WatcherCollection
   constructor: (@watchers = []) ->

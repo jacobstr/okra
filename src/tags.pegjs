@@ -1,7 +1,7 @@
 {
   // For whatever reason, __dirname refers to our node_modules/peg/lib folder.
-  okra = require(__dirname+"/../../../index.coffee")
-  ast = require(__dirname+"/../../../lib/tags.coffee")
+  okra = require(__dirname+"/../index")
+  ast = require(__dirname+"/tags")
   Tag = ast.Tag
   ExpressionNode = ast.ExpressionNode
   Node = ast.Node

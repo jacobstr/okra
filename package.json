@@ -1,9 +1,9 @@
 {
   "name": "okra",
   "description": "Fluent object and trace dumps for node.",
-  "main": "index.coffee",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no tests specified\" && exit 1"
+    "prepublish": "gulp build"
   },
   "version": "0.0.3",
   "repository": {
@@ -21,11 +21,20 @@
     "pegjs": "~0.8.0"
   },
   "devDependencies": {
-    "sinon": "~1.9.1",
     "chai": "~1.9.1",
-    "sinon-chai": "~2.5.0",
-    "grunt-mocha-test": "~0.10.2",
     "grunt-contrib-watch": "~0.6.1",
-    "grunt-simple-mocha": "~0.4.0"
+    "grunt-mocha-test": "~0.10.2",
+    "grunt-simple-mocha": "~0.4.0",
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0",
+    "gulp-concat": "^2.4.2",
+    "gulp-run": "^1.6.4",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-spawn-mocha": "^0.5.1",
+    "gulp-util": "^3.0.1",
+    "istanbul": "^0.3.2",
+    "mocha": "^2.0.1",
+    "sinon": "~1.9.1",
+    "sinon-chai": "~2.5.0"
   }
 }
