@@ -13,7 +13,7 @@
 
   stackTrace = require('stack-trace');
 
-  extend = util._extend;
+  extend = require('lodash.merge');
 
   inspector = require('eyes').inspector({
     stream: null
@@ -26,8 +26,8 @@
   all_watchers = new WatcherCollection;
 
   StackTrace = (function() {
-    function StackTrace(message) {
-      this.message = message;
+    function StackTrace(_at_message) {
+      this.message = _at_message;
       this.name = 'StackTrace';
     }
 
@@ -305,7 +305,7 @@
         _results = [];
         for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
           trace = _ref[_j];
-          _results.push(("" + trace.basename + ": " + trace.func.yellow) + (" (" + trace.line + ")").cyan);
+          _results.push((trace.basename + ": " + trace.func.yellow) + (" (" + trace.line + ")").cyan);
         }
         return _results;
       }).call(this);

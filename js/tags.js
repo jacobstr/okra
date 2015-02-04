@@ -1,8 +1,8 @@
 (function() {
   var ExpressionNode, GroupNode, Node, Predicate, Tag, UniversalTag, fs, parser, peg, util,
     __indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; },
-    __hasProp = {}.hasOwnProperty,
-    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    __hasProp = {}.hasOwnProperty;
 
   peg = require('pegjs');
 
@@ -13,8 +13,8 @@
   parser = require('./tagparser');
 
   GroupNode = (function() {
-    function GroupNode(nodes) {
-      this.nodes = nodes;
+    function GroupNode(_at_nodes) {
+      this.nodes = _at_nodes;
     }
 
     GroupNode.prototype.evaluate = function(tag_string) {
@@ -28,9 +28,9 @@
   })();
 
   Node = (function() {
-    function Node(group, predicate) {
-      this.group = group;
-      this.predicate = predicate;
+    function Node(_at_group, _at_predicate) {
+      this.group = _at_group;
+      this.predicate = _at_predicate;
     }
 
     Node.prototype.evaluate = function(tag_string) {
@@ -59,9 +59,9 @@
   })();
 
   Tag = (function() {
-    function Tag(tag, predicate) {
-      this.tag = tag;
-      this.predicate = predicate;
+    function Tag(_at_tag, _at_predicate) {
+      this.tag = _at_tag;
+      this.predicate = _at_predicate;
     }
 
     Tag.split = function(tag_string) {
@@ -97,8 +97,8 @@
   ExpressionNode = (function(_super) {
     __extends(ExpressionNode, _super);
 
-    function ExpressionNode(predicate) {
-      this.predicate = predicate;
+    function ExpressionNode(_at_predicate) {
+      this.predicate = _at_predicate;
     }
 
     return ExpressionNode;

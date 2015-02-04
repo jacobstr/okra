@@ -3,7 +3,7 @@ util = require 'util'
 path = require 'path'
 require 'coffee-errors'
 stackTrace = require 'stack-trace'
-extend = util._extend
+extend = require('lodash.merge')
 inspector = require('eyes').inspector stream:null
 
 Watcher = require './Watcher'

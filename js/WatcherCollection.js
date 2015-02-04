@@ -4,8 +4,8 @@
   tags = require('./tags');
 
   WatcherCollection = (function() {
-    function WatcherCollection(watchers) {
-      this.watchers = watchers != null ? watchers : [];
+    function WatcherCollection(_at_watchers) {
+      this.watchers = _at_watchers != null ? _at_watchers : [];
     }
 
     WatcherCollection.prototype.start = function() {

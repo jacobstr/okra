@@ -2,10 +2,10 @@
   var Watcher;
 
   Watcher = (function() {
-    function Watcher(fn, options, tag_spec) {
-      this.fn = fn;
-      this.options = options;
-      this.tag_spec = tag_spec;
+    function Watcher(_at_fn, _at_options, _at_tag_spec) {
+      this.fn = _at_fn;
+      this.options = _at_options;
+      this.tag_spec = _at_tag_spec;
       this.tag_spec = this.tag_spec.toLowerCase();
       this.invocations = 0;
     }
